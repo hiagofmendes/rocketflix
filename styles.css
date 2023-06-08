@@ -1,0 +1,134 @@
+:root {
+  --title: #fffcf9;
+  --subtitle: #b3b3b3;
+  --bg-button: #e9e6e3;
+  --bg-button-hover: #ffffff;
+  --background: linear-gradient(45deg, #102d71 0%, #000000 52%, #c12a23 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--background);
+  font-family: "Poppins", sans-serif;
+  color: var(--title);
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main {
+  margin: 90px auto 20px auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.6em;
+  text-align: center;
+  color: var(--title);
+  opacity: 90%;
+}
+
+#infosTheMovie {
+  margin: 0 2.95rem 3rem;
+  text-align: center;
+}
+
+.fetch-movie {
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3.3rem;
+}
+
+#find-movie {
+  opacity: 90%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 2px solid #2a2828;
+  border-radius: 8px;
+  cursor: pointer;
+  background: var(--bg-button);
+  padding: 0.5rem 0.8rem;
+  margin: 0 auto 1.4rem;
+}
+
+#find-movie p {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+#guidance-text {
+  font-size: 1.06em;
+  text-align: center;
+  opacity: 80%;
+  text-align: center;
+
+}
+
+.image-movie {
+  width: 12.1rem;
+  margin-bottom: 1.111rem;
+}
+
+.error-image {
+  width: 12.1rem;
+  margin-bottom: 1.111rem;
+  min-width: 12.1rem;
+}
+
+.movie-summary {
+  font-weight: 400;
+  word-break: break-word;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  padding-top: 0.923rem;
+  margin-bottom: 1.111rem;
+}
+
+#error-message {
+  display: flex;
+  align-items: center;
+  margin-top: 1.111rem;
+}
+
+#find-movie:hover {
+  background: var(--bg-button-hover);
+}
+
+@media (min-width: 768px) {
+
+  #infosTheMovie {
+    display: flex;
+    gap: 2.4rem;
+    max-width: 45.8rem;
+    max-height: 31.9rem;
+    overflow: hidden;
+    text-align: left;
+  }
+
+  .film.name {
+    font-size: 1rem;
+    line-height: 3rem;
+    margin-bottom: 1.929rem;
+  }
+
+  .fetch-movie {
+    margin-bottom: 2.3rem;
+  }
+
+  .fetch-movie p {
+    font-size: 1.1rem;
+    line-height: 2.1rem;
+  }
+}
